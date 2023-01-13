@@ -1,0 +1,1 @@
+https://hm.vlastnitnejdelsimoznouczdomenujevelmizajimavaaletakyzbytecnavec.cz

@@ -8,8 +8,7 @@ import (
 fn readall(fname: str): str {
     f := std.fopen(fname, "r")
     if f == null {
-        printf("could not find %s\n", fname)
-        return ""
+        error("could not find %s\n", fname)
     }
 
     const blockSize = 16
@@ -34,6 +33,7 @@ fn main() {
 	title := fname
 
 	inp = strings.replace(template, "__content__", inp)
+	inp = strings.replace(navbar, "__navbar__", readall("navbar.html")
 	inp = strings.replace(inp, "__title__", title)
 
 	printf("%s\n", inp)
