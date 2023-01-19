@@ -34,6 +34,7 @@ fn main() {
 
 	inp = strings.replace(template, "__content__", inp)
 	inp = strings.replace(inp, "__navbar__", readall("navbar.html"))
+	inp = strings.replace(inp, "__footer__", readall("footer.html"))
 	inp = strings.replace(inp, "__title__", title)
 
 	printf("%s\n", inp)
