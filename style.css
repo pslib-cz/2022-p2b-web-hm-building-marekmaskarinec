@@ -80,6 +80,7 @@ article {
 	padding-right: 40px;
 	text-decoration: none;
 	font-weight: bold;
+	font-size: 20px;
 	display: inline-block;
 }
 
@@ -192,17 +193,19 @@ footer {
 
 	.header__hero > h1 {
 		font-size: 120px;
-		font-weight: bold;
+		font-weight: 800;
 	}
 
 	.header__hero > p {
 		font-size: 60px;
-		font-weight: 100;
+		font-weight: 300;
 	}
 
 	.header__hero {
-		margin-top: auto;
-		margin-bottom: 20px;
+		width: 100%;
+		margin-bottom: 128px;
+		position: absolute;
+		bottom: 0;
 	}
 
 	.heading {
