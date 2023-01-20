@@ -24,10 +24,10 @@ article {
 .header {
 	margin: 0;
 	background-image:
-		linear-gradient(rgba(0.2, 0.2, 0.2, 0.2), rgba(0.2, 0.2, 0.2, 0.2)),
+		linear-gradient(rgba(0.6, 0.6, 0.6, 0.6), rgba(0.6, 0.6, 0.6, 0.6)),
 		url("media/pageheader-1920w.jpg");
 	background-size: cover;
-	background-position: center;
+	background-position: top center;
 }
 
 .header--index {
@@ -61,8 +61,10 @@ article {
 }
 
 .navbar__hamburger > p {
+	color: var(--text--gray);
 	font-size: 12px;
-	margin: 0;
+	margin: auto;
+	max-width: 46px;
 }
 
 .navbar__hamburger__buttons > div {
@@ -157,6 +159,35 @@ article {
 	font-size: 17px;
 }
 
+.reference > p {
+	margin-bottom: 62px;
+}
+
+.reference__gallery__item {
+	width: 100%;
+	text-align: center;
+	margin-bottom: 32px;
+}
+
+.reference__gallery__item > img {
+	max-width: 100%;
+}
+
+.reference__gallery__item__label > h3 {
+	font-size: 22px;
+	margin-top: 10px;
+	margin-bottom: 6px;
+}
+
+.reference__gallery__item__label > p {
+	font-size: 12px;
+	margin: 0;
+}
+
+.reference > .btn {
+	display: none;
+}
+
 footer {
 	padding: 50px;
 	text-align: center;
@@ -165,6 +196,9 @@ footer {
 }
 
 @media (min-width: 1400px) {
+	.header {
+		background-position: center center;
+	}
 
 	.btn {
 		padding-left: 80px;
@@ -279,5 +313,52 @@ footer {
 		padding-left: 204px;
 		padding-top: 128px;
 		padding-bottom: 128px;
+	}
+
+	.reference {
+		text-align: center;
+		margin-bottom: 200px;
+	}
+
+	.reference__gallery {
+		display: flex;
+		justify-content: center;
+		margin-bottom: 80px;
+	}
+
+	.reference__gallery__item {
+		margin: 10px;
+		width: 450px;
+		position: relative;
+	}
+
+	.reference__gallery__item > img {
+		height: 280px;
+		width: 100%;
+	}
+
+	.reference__gallery__item__label {
+		position: absolute;
+		top: 0;
+		left: 0;
+		height: 280px;
+		width: 450px;
+		visibility: hidden;
+
+		background-color: rgba(235, 108, 27, 0.8);
+		color: var(--bg);
+
+		display: flex;
+		align-items: center;
+		flex-direction: column;
+		justify-content: center;
+	}
+
+	.reference__gallery__item:hover .reference__gallery__item__label {
+		visibility: visible;
+	}
+
+	.reference > .btn {
+		display: inline-block;
 	}
 }
