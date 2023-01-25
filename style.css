@@ -267,6 +267,22 @@ main.o-nas > ul > li::before {
 		text-decoration: none
 	}
 
+	.header--index .navbar__links--index,
+	.header--sluzby .navbar__links--sluzby,
+	.header--reference .navbar__links--reference,
+	.header--o-nas .navbar__links--o-nas,
+	.header--kontakt .navbar__links--kontakt {
+		background-color: var(--primary);
+	}
+
+	.header--index .navbar__links--index a,
+	.header--sluzby .navbar__links--sluzby a,
+	.header--reference .navbar__links--reference a,
+	.header--o-nas .navbar__links--o-nas a,
+	.header--kontakt .navbar__links--kontakt a {
+		color: var(--bg);
+	}
+
 	.header--index {
 		height: calc(100vh - 50px);
 		padding-bottom: 0;
