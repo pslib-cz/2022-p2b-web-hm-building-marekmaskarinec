@@ -195,9 +195,39 @@ footer {
 	background-color: var(--primary);
 }
 
+main.o-nas {
+	margin-left: 20px;
+	margin-right: 22px;
+	margin-top: 90px;
+	margin-bottom: 50px;
+}
+
+main.o-nas > h1 {
+	font-size: 30px;
+}
+
+main.o-nas > p {
+	font-size: 14px;
+}
+
+main.o-nas > ul {
+	list-style: none;
+}
+
+main.o-nas > ul > li::before {
+	content: "\2022";
+	color: var(--primary);
+	font-weight: bold;
+	display: inline-block;
+	width: 1em;
+	margin-left: -1em;
+}
+
 @media (min-width: 1400px) {
 	.header {
 		background-position: center center;
+		padding-top: 25px;
+		padding-bottom: 25px;
 	}
 
 	.btn {
@@ -239,7 +269,7 @@ footer {
 
 	.header--index {
 		height: calc(100vh - 50px);
-		padding-top: 25px;
+		padding-bottom: 0;
 	}
 
 	.header__hero > h1 {
@@ -360,5 +390,20 @@ footer {
 
 	.reference > .btn {
 		display: inline-block;
+	}
+
+	main.o-nas {
+		margin-left: 205px;
+		margin-bottom: 200px;
+		max-width: 1120px;
+	}
+
+	main.o-nas > h1 {
+		font-size: 60px;
+		text-align: center;
+	}
+
+	main.o-nas > p {
+		font-size: 16px;
 	}
 }
