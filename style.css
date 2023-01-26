@@ -195,26 +195,26 @@ footer {
 	background-color: var(--primary);
 }
 
-main.o-nas {
+.main--text-site {
 	margin-left: 20px;
 	margin-right: 22px;
 	margin-top: 90px;
 	margin-bottom: 50px;
 }
 
-main.o-nas > h1 {
+.main--text-site > h1 {
 	font-size: 30px;
 }
 
-main.o-nas > p {
+.main--text-site > p {
 	font-size: 14px;
 }
 
-main.o-nas > ul {
+.main--text-site ul {
 	list-style: none;
 }
 
-main.o-nas > ul > li::before {
+.main--text-site ul > li::before {
 	content: "\2022";
 	color: var(--primary);
 	font-weight: bold;
@@ -408,18 +408,21 @@ main.o-nas > ul > li::before {
 		display: inline-block;
 	}
 
-	main.o-nas {
-		margin-left: 205px;
+	.main--text-site {
 		margin-bottom: 200px;
+	}
+
+	.main--text-site > article {
+		margin-left: 205px;
 		max-width: 1120px;
 	}
 
-	main.o-nas > h1 {
+	.main--text-site > h1 {
 		font-size: 60px;
 		text-align: center;
 	}
 
-	main.o-nas > p {
+	.main--text-site > p {
 		font-size: 16px;
 	}
 }
