@@ -167,6 +167,7 @@ article {
 	width: 100%;
 	text-align: center;
 	margin-bottom: 32px;
+	display: block;
 }
 
 .reference__gallery__item > img {
@@ -221,6 +222,10 @@ footer {
 	display: inline-block;
 	width: 1em;
 	margin-left: -1em;
+}
+
+.main--text-site__gallery img {
+	max-width: 100%;
 }
 
 @media (min-width: 1400px) {
@@ -424,5 +429,18 @@ footer {
 
 	.main--text-site > p {
 		font-size: 16px;
+	}
+
+	.main--text-site--gallery > p {
+		text-align: center;
+	}
+
+	.main--text-site__gallery {
+		display: grid;
+		grid-template-columns: 1fr 1fr 1fr;
+		margin-left: 50px;
+		margin-right: 50px;
+		grid-gap: 10px;
+		align-items: end;
 	}
 }
