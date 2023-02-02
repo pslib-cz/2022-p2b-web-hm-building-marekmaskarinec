@@ -1,0 +1,64 @@
+<header class="header header--kontakt">
+	__navbar__
+</header>
+<main class="kontakt">
+	<div class="kontakt__header">
+		<h1>Kontaktujte nás</h1>
+		<p>
+			Zavolejte anebo nám napište... kvalitní komunikace je jeden z pilířů, na
+			kterém stavíme.
+		</p>
+	</div>
+
+	<div class="kontakt__links">
+		<ul>
+			<li>
+				<a href="#">
+					<span class="icon material-symbols-outlined">call</span>
+					+420 775 550 564
+				</a>
+			</li>
+			<li>
+				<a href="mailto:stavby@hm-building.cz">
+					<span class="icon material-symbols-outlined">mail</span>
+					stavby@hm-building.cz
+				</a>
+			</li>
+			<li>
+				<a href="https://en.mapy.cz/s/behagenasa">
+					<span class="icon material-symbols-outlined">location_on</span>
+					Křižanská 12, Liberec XXII-Horní Suchá
+				</a>
+			</li>
+		</ul>
+	</div>
+
+	<div class="kontakt__mapa">
+		<iframe
+			style="border:none"
+			src="https://en.frame.mapy.cz/s/fusutahudu"
+			frameborder="0">
+		</iframe>
+	</div>
+
+	<div class="kontakt__form">
+		<form id="kontakt-form">
+			<label for="name">Jméno a Příjmení</label><br>
+			<input type="text" id="name" name="name"><br>
+			<label for="mail">E-mail</label><br>
+			<input type="text" id="mail" name="mail"><br>
+			<label for="phone">Telefon</label><br>
+			<input type="text" id="phone" name="phone"><br>
+			<label for="sluzba">Poptávaná služba</label><br>
+			<select name="sluzba" id="sluzba">
+				<option name="novostavba">Novostavba</option>
+			</select><br>
+			<label for="content">Poznámka</label><br>
+			<textarea name="content" id="content" cols="40" rows="10"></textarea><br>
+		</form>
+
+		<a class="btn btn--primary" href="#">
+			Odeslat nezávaznou poptávku
+		</a>
+	</div>
+</main>

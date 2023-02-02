@@ -7,7 +7,7 @@
 	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
 </head>
 <body>
-<header class="header header--reference">
+<header class="header header--kontakt">
 	<div class="navbar">
 	<a class="navbar__logo" href="index.html">
 		<img alt="hm-building logo" src="media/logo.png" />
@@ -65,17 +65,65 @@ document.querySelector(".navbar__hamburger").onclick = () => {
 </div>
 
 </header>
-<main class="main--text-site main--text-site--gallery">
-	<h1>Venkovní plochy Restyl</h1>
-	<p>
-		Provedení venkovních ploch Restyl
-	</p>
+<main class="kontakt">
+	<div class="kontakt__header">
+		<h1>Kontaktujte nás</h1>
+		<p>
+			Zavolejte anebo nám napište... kvalitní komunikace je jeden z pilířů, na
+			kterém stavíme.
+		</p>
+	</div>
 
-	<div class="main--text-site__gallery">
-		<img src="media/reference/plochy-restyl/reference-restyl-01.jpeg" alt="pavement costructed by HM building" />
-		<img src="media/reference/plochy-restyl/reference-restyl-02.jpeg" alt="pavement costructed by HM building" />
-		<img src="media/reference/plochy-restyl/reference-restyl-03.jpeg" alt="pavement costructed by HM building" />
-		<img src="media/reference/plochy-restyl/reference-restyl-04.jpeg" alt="pavement costructed by HM building" />
+	<div class="kontakt__links">
+		<ul>
+			<li>
+				<a href="#">
+					<span class="icon material-symbols-outlined">call</span>
+					+420 775 550 564
+				</a>
+			</li>
+			<li>
+				<a href="mailto:stavby@hm-building.cz">
+					<span class="icon material-symbols-outlined">mail</span>
+					stavby@hm-building.cz
+				</a>
+			</li>
+			<li>
+				<a href="https://en.mapy.cz/s/behagenasa">
+					<span class="icon material-symbols-outlined">location_on</span>
+					Křižanská 12, Liberec XXII-Horní Suchá
+				</a>
+			</li>
+		</ul>
+	</div>
+
+	<div class="kontakt__mapa">
+		<iframe
+			style="border:none"
+			src="https://en.frame.mapy.cz/s/fusutahudu"
+			frameborder="0">
+		</iframe>
+	</div>
+
+	<div class="kontakt__form">
+		<form id="kontakt-form">
+			<label for="name">Jméno a Příjmení</label><br>
+			<input type="text" id="name" name="name"><br>
+			<label for="mail">E-mail</label><br>
+			<input type="text" id="mail" name="mail"><br>
+			<label for="phone">Telefon</label><br>
+			<input type="text" id="phone" name="phone"><br>
+			<label for="sluzba">Poptávaná služba</label><br>
+			<select name="sluzba" id="sluzba">
+				<option name="novostavba">Novostavba</option>
+			</select><br>
+			<label for="content">Poznámka</label><br>
+			<textarea name="content" id="content" cols="40" rows="10"></textarea><br>
+		</form>
+
+		<a class="btn btn--primary" href="#">
+			Odeslat nezávaznou poptávku
+		</a>
 	</div>
 </main>
 
