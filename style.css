@@ -212,6 +212,8 @@ article {
 	text-align: center;
 	margin-bottom: 32px;
 	display: block;
+	color: var(--fg);
+	text-decoration: none;
 }
 
 .reference__gallery__item > img {
