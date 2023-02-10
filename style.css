@@ -561,7 +561,7 @@ select {
 		margin-bottom: 200px;
 	}
 
-	.main--text-site > article {
+	.main--text-site > section {
 		margin-left: 205px;
 		max-width: 1120px;
 	}
