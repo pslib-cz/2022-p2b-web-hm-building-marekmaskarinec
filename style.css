@@ -11,10 +11,13 @@
 	src: url("open_sans/OpenSans-VariableFont_wdth,wght.ttf");
 }
 
+html {
+	font-family: "open-sans";
+}
+
 body {
 	margin: 0;
 	color: var(--text);
-	font-family: "open-sans";
 }
 
 article, section {
