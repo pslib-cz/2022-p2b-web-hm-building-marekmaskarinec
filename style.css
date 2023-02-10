@@ -17,7 +17,7 @@ body {
 	font-family: "open-sans";
 }
 
-article {
+article, section {
 	padding: 21px;
 }
 
@@ -430,6 +430,13 @@ select {
 
 	.header__hero > .btn {
 		display: inline-block;
+		vertical-align: center;
+	}
+
+	.header__hero__btn > span {
+		margin-top: auto;
+		margin-bottom: auto;
+		margin-left: 10px;
 	}
 
 	.heading {
