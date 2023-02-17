@@ -115,7 +115,7 @@ article, section {
 
 .navbar__hamburger > p {
 	color: var(--text--gray);
-	font-size: 12px;
+	font-size: 0.8rem;
 	margin: auto;
 	max-width: 46px;
 }
@@ -134,13 +134,18 @@ article, section {
 }
 
 .header__hero > h1 {
-	font-size: 30px;
+	font-size: 2rem;
 	font-weight: 800;
 }
 
-.header__hero > p {
-	font-size: 20px;
-	font-weight: 300;
+.header__hero > h1 > span {
+	font-size: 1.5rem;
+	font-weight: 100;
+}
+
+.header__hero > h1 > span::before {
+	content: '\A';
+	white-space: pre;
 }
 
 .header__hero {
@@ -161,7 +166,7 @@ article, section {
 	padding-right: 40px;
 	text-decoration: none;
 	font-weight: bold;
-	font-size: 20px;
+	font-size: 1rem;
 	display: inline-block;
 }
 
@@ -209,7 +214,7 @@ article, section {
 		url("media/background-CTAblock-4460w.jpg");
 	background-size: cover;
 	background-position: center;
-	font-size: 17px;
+	font-size: 1rem;
 }
 
 .reference > p {
@@ -230,13 +235,13 @@ article, section {
 }
 
 .reference__gallery__item__label > h3 {
-	font-size: 22px;
+	font-size: 1.6rem;
 	margin-top: 10px;
 	margin-bottom: 6px;
 }
 
 .reference__gallery__item__label > p {
-	font-size: 12px;
+	font-size: 0.8rem;
 	margin: 0;
 }
 
@@ -259,11 +264,11 @@ footer {
 }
 
 .main--text-site > h1 {
-	font-size: 30px;
+	font-size: 2rem;
 }
 
 .main--text-site > p {
-	font-size: 14px;
+	font-size: 0.9rem;
 }
 
 .main--text-site ul {
@@ -392,7 +397,7 @@ select {
 	.navbar__links menu {
 		display: flex;
 		color: var(--text--gray);
-		font-size: 16px;
+		font-size: 1rem;
 		margin: 0;
 	}
 
@@ -431,11 +436,18 @@ select {
 	}
 
 	.header__hero > h1 {
-		font-size: 120px;
+		font-size: 8rem;
+		line-height: 120px;
 	}
 
-	.header__hero > p {
-		font-size: 60px;
+	.header__hero > h1 > span {
+		font-size: 4rem;
+		font-weight: 100;
+	}
+
+	.header__hero > h1 > span::before {
+		content: '\A';
+		white-space: pre;
 	}
 
 	.header__hero {
@@ -460,11 +472,11 @@ select {
 	}
 
 	.heading > h2 {
-		font-size: 60px;
+		font-size: 4rem;
 	}
 
 	.heading > p {
-		font-size: 20px;
+		font-size: 1.2rem;
 	}
 
 	.showcase {
@@ -504,7 +516,7 @@ select {
 	}
 
 	.sluzby__inner {
-		font-size: 30px;
+		font-size: 2rem;
 		margin-left: 204px;
 		margin-top: 128px;
 		margin-bottom: 128px;
@@ -567,12 +579,12 @@ select {
 	}
 
 	.main--text-site > h1 {
-		font-size: 60px;
+		font-size: 4rem;
 		text-align: center;
 	}
 
 	.main--text-site > p {
-		font-size: 16px;
+		font-size: 1rem;
 	}
 
 	.main--text-site--gallery > p {
