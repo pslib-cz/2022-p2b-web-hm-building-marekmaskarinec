@@ -318,6 +318,8 @@ footer {
 .kontakt__links > ul a {
 	color: var(--primary);
 	text-decoration: none;
+	display: flex;
+	align-items: center;
 }
 
 .kontakt__links > ul .icon {
@@ -326,6 +328,7 @@ footer {
 	padding: 8px;
 	border: solid, black, 0px;
 	border-radius: 50%;
+	margin-right: 5px;
 }
 
 .kontakt__mapa {
